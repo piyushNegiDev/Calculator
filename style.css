@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.calculator {
+  width: 230px;
+  height: auto;
+  margin: 20px auto 10px;
+}
+.grid {
+  height: 300px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 10px;
+}
+.equalBtn {
+  grid-row: 4/6;
+  grid-column: 4/5;
+}
+#input {
+  width: 230px;
+  height: 50px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  outline: none;
+  text-align: right;
+}
+.backwardBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

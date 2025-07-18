@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <input id="input" type="text" />
+
+      <div class="grid">
+        <button onclick="calInput('AC')">AC</button>
+        <button>&divide;</button>
+        <button>&times;</button>
+        <button class="backwardBtn">
+          <img height="30px" width="40px" src="backwardBtn.svg" alt="" />
+        </button>
+
+        <button onclick="calInput('7')">7</button>
+        <button onclick="calInput('8')">8</button>
+        <button onclick="calInput('9')">9</button>
+        <button onclick="calInput('-')">-</button>
+
+        <button onclick="calInput('4')">4</button>
+        <button onclick="calInput('5')">5</button>
+        <button onclick="calInput('6')">6</button>
+        <button onclick="calInput('+')">+</button>
+
+        <button onclick="calInput('1')">1</button>
+        <button>2</button>
+        <button onclick="calInput('3')">3</button>
+        <button onclick="calculation()" class="equalBtn">=</button>
+
+        <button>.</button>
+        <button onclick="calInput('0')">0</button>
+        <button>%</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

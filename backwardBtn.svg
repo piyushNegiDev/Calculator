@@ -1,0 +1,8 @@
+<svg width="60" height="40" viewBox="0 0 100 60" xmlns="http://www.w3.org/2000/svg">
+  <!-- Tag shape -->
+  <path d="M10 30 L30 10 H90 V50 H30 Z" fill="#c15fed" stroke="white" stroke-width="2"/>
+  
+  <!-- X icon -->
+  <line x1="45" y1="20" x2="65" y2="40" stroke="white" stroke-width="4"/>
+  <line x1="65" y1="20" x2="45" y2="40" stroke="white" stroke-width="4"/>
+</svg>
