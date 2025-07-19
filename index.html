@@ -8,34 +8,39 @@
   </head>
   <body>
     <div class="calculator">
+      <div class="upperInput"></div>
       <input id="input" type="text" />
 
       <div class="grid">
-        <button onclick="calInput('AC')">AC</button>
-        <button>&divide;</button>
-        <button>&times;</button>
-        <button class="backwardBtn">
+        <button class="colorPink" onclick="calInput('AC')">AC</button>
+        <button class="colorPink" onclick="calInput('/')">&divide;</button>
+        <button class="colorPink" onclick="calInput('*')">&times;</button>
+
+        <button onclick="backward()" class="backwardBtn">
           <img height="30px" width="40px" src="backwardBtn.svg" alt="" />
         </button>
 
         <button onclick="calInput('7')">7</button>
         <button onclick="calInput('8')">8</button>
         <button onclick="calInput('9')">9</button>
-        <button onclick="calInput('-')">-</button>
+        <button class="backgroundPink" onclick="calInput('-')">-</button>
 
         <button onclick="calInput('4')">4</button>
         <button onclick="calInput('5')">5</button>
         <button onclick="calInput('6')">6</button>
-        <button onclick="calInput('+')">+</button>
+        <button class="backgroundPink" onclick="calInput('+')">+</button>
 
         <button onclick="calInput('1')">1</button>
-        <button>2</button>
+        <button onclick="calInput('2')">2</button>
         <button onclick="calInput('3')">3</button>
-        <button onclick="calculation()" class="equalBtn">=</button>
 
-        <button>.</button>
+        <button onclick="calculation()" class="backgroundPink equalBtn">
+          =
+        </button>
+
+        <button onclick="calInput('.')">.</button>
         <button onclick="calInput('0')">0</button>
-        <button>%</button>
+        <button onclick="calInput('%')">%</button>
       </div>
     </div>
 
